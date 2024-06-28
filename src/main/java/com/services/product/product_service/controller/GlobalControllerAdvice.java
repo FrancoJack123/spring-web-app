@@ -62,9 +62,9 @@ public class GlobalControllerAdvice {
         BindingResult result = exception.getBindingResult();
 
         return ErrorResponse.builder()
-                .code(INVALID_PRODUCT.getCode())
+                .code(INVALID_GENERIC.getCode())
                 .status(HttpStatus.BAD_REQUEST)
-                .message(INVALID_PRODUCT.getMessage())
+                .message(INVALID_GENERIC.getMessage())
                 .detailMessages(result.getFieldErrors()
                         .stream()
                         .map(DefaultMessageSourceResolvable::getDefaultMessage)

@@ -6,10 +6,11 @@ import lombok.Getter;
 public enum ErrorCatalog {
 
     PRODUCT_NOT_FOUND("ERR_PROD_001", "Product not found."),
-    INVALID_PRODUCT("ERR_PROD_002", "Invalid product parameters."),
     CATEGORY_NOT_FOUND("ERR_CAT_001", "Category not found."),
     CLIENT_NOT_FOUND("ERR_CLI_001", "Client not found."),
-    GENERIC_ERROR("ERR_GEN_001", "An unexpected error occurred.");
+    GENERIC_ERROR("ERR_GEN_001", "An unexpected error occurred."),
+    INVALID_GENERIC("ERR_GEN_002", "Invalid  parameters.");
+
 
     private final String code;
     private final String message;
