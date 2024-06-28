@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: product-service
+  jackson:
+    default-property-inclusion: non_null
+    property-naming-strategy: SNAKE_CASE
+  datasource:
+    url: ${DB_URL}
+    username: ${USER_DB}
+    password: ${PASSWORD_DB}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  port: 8081
