@@ -16,25 +16,6 @@ Este proyecto es una aplicación Spring Boot que incluye Swagger UI para la docu
 
 Abre tu navegador y visita: http://localhost:8080/swagger-ui/index.html
 
-## Estructura del proyecto
-src
-├── main
-│   ├── java
-│   │   └── com
-│   │       └── tuempresa
-│   │           └── tuproyecto
-│   │               ├── config
-│   │               ├── controller
-│   │               ├── model
-│   │               ├── repository
-│   │               ├── service
-│   │               └── TuproyectoApplication.java
-│   └── resources
-│       ├── application.properties
-│       ├── static
-│       └── templates
-├── test
-└── pom.xml
 ## Configuración de Git
 
 1. Inicializa Git (si aún no lo has hecho):
@@ -65,7 +46,3 @@ Aquí encontrarás una lista de todos los endpoints disponibles, sus parámetros
 3. Haz commit de tus cambios (`git commit -am 'Añade nueva característica'`)
 4. Haz push a la rama (`git push origin feature/nueva-caracteristica`)
 5. Crea un nuevo Pull Request
-
-## Licencia
-
-[MIT](https://choosealicense.com/licenses/mit/)
