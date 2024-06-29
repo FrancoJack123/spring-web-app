@@ -12,4 +12,5 @@ public class CreateCategoryRequest {
     @NotEmpty(message = "The field name cannot be empty or null.")
     private String name;
 
+    private String description;
 }

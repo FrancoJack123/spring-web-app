@@ -44,6 +44,7 @@ public class CategoryServiceImpl implements CategoryService{
     public CategoryResponse save(CreateCategoryRequest request) {
         Category category = new Category();
         category.setName(request.getName());
+        category.setDescription(request.getDescription());
         return categoryMapper.toCategoryResponse(categoryRepository.save(category));
     }
 
@@ -52,6 +53,7 @@ public class CategoryServiceImpl implements CategoryService{
         return categoryRepository.findById(id)
                 .map(category -> {
                     category.setName(request.getName());
+                    category.setDescription(request.getDescription());
                     return categoryMapper.toCategoryResponse(categoryRepository.save(category));
                 })
                 .orElseThrow(CategoryNotFoundException::new);

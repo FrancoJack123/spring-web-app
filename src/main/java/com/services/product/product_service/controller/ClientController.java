@@ -6,6 +6,7 @@ import com.services.product.product_service.service.ClientService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.net.URI;
@@ -14,6 +15,7 @@ import java.util.List;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/api/clients")
+@PreAuthorize("hasAnyRole('ADMIN','USER')")
 public class ClientController {
 
     private final ClientService clientService;
